@@ -1,5 +1,17 @@
 import Link from "next/link";
 
+// export default function HomePage(){
+//     return(
+//         <>
+//         <div className="w-full h-full bg-cover bg-[url('../assets/login.png')]">
+//             <Navbar/>
+//             <Dashboard/>
+//         </div>
+//         </>
+//     )
+// }
+
+
 export default function HomePage() {
     return (
 

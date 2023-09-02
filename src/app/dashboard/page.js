@@ -1,27 +1,12 @@
-export default function LoginPage() {
+import Navbar from "@/components/Navbar"
+import Dash from "@/components/Dash"
+import bg from "../../assets/bg.png"
+export default function Dashboard() {
     return (
 
-        <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 my-page">
-
-            <div className="grid gap-4 grid-cols-2">
-
-                <div>
-
-                </div>
-
-
-                <div>
-                <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-
-                    <h2 style={{ fontFamily: 'Ubuntu, sans-serif' }} className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-white">
-                        dash
-                    </h2>
-                </div>
-
-
-                </div>
-            </div>
-
+        <div className={`flex min-h-full flex-col gap-6 items-start justify-center px-6 py-12 lg:px-8 dash`}>
+            <Navbar/>
+            <Dash/>
         </div>
     )
 }

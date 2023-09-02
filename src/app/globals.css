@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 .my-page {
-    background-image: url('../assets/login.png');
+    background-image: url('../assets/bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -16,4 +16,18 @@
     background-image: url('../assets/pp.png');
     height: 50%;
     width: 50%;
+}
+
+.dash {
+    background-image: url('../assets/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.nav {
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(62.138668060302734px);
 }
