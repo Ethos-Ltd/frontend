@@ -31,3 +31,17 @@
     background: rgba(255, 255, 255, 0.11);
     backdrop-filter: blur(62.138668060302734px);
 }
+
+.post-card {
+    fill: rgba(255, 255, 255, 0.12);
+    stroke-width: 1px;
+    stroke: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(54.84733200073242px);
+}
+
+.tree{
+    border-radius: 34px;
+    border: 1px solid rgba(255, 255, 255, 0.80);
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(47.776363372802734px);
+}
