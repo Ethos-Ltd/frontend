@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar"
 import Dash from "@/components/Dash"
-import bg from "../../assets/bg.png"
 export default function Dashboard() {
     return (
 
