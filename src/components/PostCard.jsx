@@ -1,26 +1,27 @@
 import Image from 'next/image'
 import Reaction from './Reaction'
 import Comment from './Comment'
+import option from "../assets/option.png"
 
-const PostCard = ({profilePic, name, relationship, postedAt, photo}) => {
+const PostCard = ({profilePic, name, relationship, postedAt, photo, option, message}) => {
   return (
     <div className={`flex flex-col gap-3 items-center justify-center w-[522px] h-[605px] rounded-md post-card`}>
       <div className='flex flex-row'>
         <Image src={profilePic} width={24} height={24} alt='pro-pic'/>
-        <div className='flex flex-col'>
-          <div className='flex flex-row'>
-            <h2>{name}</h2>
-            <p>{postedAt}</p>
+        <div className='flex flex-col justify-center items-start'>
+          <div className='flex flex-row justify-center items-start'>
+            <h2 className='text-sm not-italic font-semibold text-white mx-3'>{name}</h2>
+            <p className='text-sm not-italic font-semibold text-white'>{postedAt}</p>
           </div>
-          <p>{relationship}</p>
+          <p className='text-sm italic font-light text-white mx-2'>{relationship}</p>
         </div>
-        <Image src={option} alt='option' width={23} height={28} className='flex-shrink-0'/>
+        <Image src={option} alt='option' width={23} height={28} className='flex-shrink-0 ml-56' style={{color: "white"}}/>
       </div>
-      <div className='flex flex-col rounded-md bg-white w-[481px] h-[499px] flex-shrink-0'>
-        <p>
+      <div className='flex flex-col justify-between rounded-md bg-white w-[481px] h-[499px] flex-shrink-0'>
+        <p className='text-gray-800 text-sm not-italic font-normal'>
           {message}
         </p>
-        <Image src={photo} alt='option' width={430} height={255} className='flex-shrink-0 rounded-sm'/>
+        <Image src={photo} alt='photo' width={430} height={255} className='flex-shrink-0 rounded-sm'/>
       </div>
       <div>
         <Reaction/>
