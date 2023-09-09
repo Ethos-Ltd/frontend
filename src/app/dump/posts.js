@@ -6,7 +6,7 @@ const posts = [
         name: "Christine Maithya",
         relationship: "Aunt",
         postedAt: "6h",
-        message: "testning out my new bae!!",
+        message: "testing out my new bae!!",
         photo: "/assets/newCar.png",
     },
     {

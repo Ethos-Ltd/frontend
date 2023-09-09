@@ -28,11 +28,11 @@ const treeActions = [
 
 const Dash = () => {
   return (
-    <div className="flex flex-row gap-32 items-center w-[1429px] h-[605px]">
-        <div className="basis-2/5 m-12 h-full sm:mx-auto sm:w-full sm:max-w-sm justify-center items-center">
-            <div className='flex flex-row'>
-                <img src={profile} alt='pro-pic' className='rounded-full w-6 h-6 mr-8'/>
-                <div className='flex flex-row flex-shink-0 rounded-full justify-between items-center p-1 gap-4 w-[488px] h-[62px] bg-[#D9D9D9]'>
+    <div className="flex flex-row gap-32 items-center justify-between w-full h-full">
+        <div className="basis-2/5 h-full sm:mx-auto sm:w-full sm:max-w-sm justify-center items-start">
+            <div className='flex flex-row basis-full'>
+                <Image src={profile} alt='pro-pic' width={24} height={24} className='rounded-full w-6 h-6'/>
+                <div className='flex flex-row flex-shink-0 grow rounded-full justify-between items-center p-1 gap-4  h-[62px] bg-[#D9D9D9]'>
                     <input type='text' placeholder="What's new?" className='rounded-full h-12 p-2'/>
                     <div className='flex flex-row items-center justify-between'>
                         {icons.map((icon, i) => (
@@ -43,7 +43,7 @@ const Dash = () => {
                     </div>
                 </div>
             </div>
-            <div className=''>
+            <>
             {
                 posts.map((post, i) => (
                     <div key={i}>
@@ -51,11 +51,11 @@ const Dash = () => {
                     </div>
                 ))
             }
-            </div>
+            </>
         </div>
-        <div className="basis-3/5 flex-row gap-3 justify-end w-[821px] h-[415px]">
+        <div className="basis-3/5 flex-row gap-3 justify-end">
             <div className={`flex flex-col rounded-md tree `}>
-                <div className='flex flex-row justify-between'>
+                <div className='flex flex-row justify-end items-end gap-2 p-3'>
                     {treeActions.map((treeAction, i) => (
                         <Link href="" key={i}>
                             <Image src={treeAction} width={24} height={24} alt={`tree-action`}/>
@@ -63,7 +63,7 @@ const Dash = () => {
                     ))}
                 </div>
                 <div>
-                    <Image src={tree} width={600} height={450} alt='tree'/>
+                    <Image src={tree} width={900} height={750} alt='tree' className='p-3'/>
                 </div>
             </div>
             <div className={`flex flex-col rounded-md tree`}>
