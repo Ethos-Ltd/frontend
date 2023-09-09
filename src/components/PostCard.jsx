@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import Reaction from './Reaction'
 import Comment from './Comment'
-import option from "../assets/option.png"
+import option from "/assets/option.png"
 
-const PostCard = ({profilePic, name, relationship, postedAt, photo, option, message}) => {
+const PostCard = ({profilePic, name, relationship, postedAt, photo, message}) => {
   return (
     <div className={`flex flex-col gap-3 items-center justify-center w-[522px] h-[605px] rounded-md my-5 post-card`}>
       <div className='flex flex-row justify-between items-start gap-2'>
