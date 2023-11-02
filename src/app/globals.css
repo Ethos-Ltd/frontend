@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 .my-page {
-    background-image: url('../assets/bg.png');
+    background-image: url('../../public/assets/bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -13,13 +13,13 @@
 }
 
 .register-section {
-    background-image: url('../assets/pp.png');
+    background-image: url('../../public/assets/pp.png');
     height: 50%;
     width: 50%;
 }
 
 .dash {
-    background-image: url('../assets/bg.png');
+    background-image: url('../../public/assets/bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
